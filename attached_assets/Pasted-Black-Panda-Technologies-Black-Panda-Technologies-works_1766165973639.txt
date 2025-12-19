@@ -1,0 +1,141 @@
+Black Panda Technologies
+
+Black Panda Technologies works with digital marketing agencies to design and maintain white-label automation and software systems, delivered offshore.
+
+Most of the work sits behind the scenes — helping agencies offer automation, AI-assisted workflows, and internal tools to their clients without building an in-house engineering team.
+
+What we actually help agencies with
+
+Agencies usually come to us when:
+
+automation keeps coming up in client conversations
+
+internal workflows are getting messy or manual
+
+they want to offer “AI” or automation, but not as vague add-ons
+
+hiring and maintaining a full technical team doesn’t make sense
+
+The work typically includes:
+
+white-label workflow automation for agency clients
+
+internal automation for the agency itself
+
+custom AI assistants or chat-based tools
+
+frontend-heavy tools and dashboards when needed
+
+adapting open-source systems for specific use cases
+
+Everything is designed to fit your existing service stack, not replace it.
+
+White-label, offshore, and deliberately quiet
+
+Black Panda Technologies operates as an offshore technical partner.
+
+That means:
+
+your agency remains client-facing
+
+the work stays white-label
+
+communication is clean and predictable
+
+delivery focuses on reliability, not visibility
+
+Cost savings naturally come from offshore execution, but the real goal is:
+
+consistency
+
+technical continuity
+
+fewer things breaking when clients scale
+
+How automation is handled here
+
+Automation is treated as infrastructure, not a buzzword.
+
+We standardize workflow maintenance and orchestration using:
+
+make.com
+
+n8n
+
+These tools are chosen because they:
+
+are transparent and inspectable
+
+support complex logic without overengineering
+
+are maintainable by teams over time
+
+AI components are added only where they make sense, and always with:
+
+defined responsibility
+
+fallback logic
+
+human override paths
+
+If something is better solved without AI, that’s the direction we take.
+
+How agency projects usually start
+
+There’s rarely a perfect brief.
+
+It often begins with:
+
+“Clients keep asking for automation”
+
+“We’ve hacked something together and it’s fragile”
+
+“We need a backend partner we don’t have to micro-manage”
+
+The first step is usually:
+
+understanding the agency’s service model
+
+mapping what should be standardized vs customized
+
+deciding what should remain manual
+
+From there, systems are built incrementally and quietly improved.
+
+A note on the founder
+
+Black Panda Technologies is run by Abhirup Basu.
+
+Before working in software, Abhirup studied Earth Science and Geology, which shaped how he approaches systems: looking at layers, dependencies, long-term behavior, and edge cases.
+
+That background still shows up in the work:
+
+curiosity over rigid templates
+
+experimentation before formalization
+
+careful thinking about what happens when systems scale
+
+The approach is less about “shipping fast” and more about building things that don’t become liabilities later.
+
+Who this tends to work well for
+
+This setup usually fits agencies that:
+
+want to offer automation or AI services under their own brand
+
+prefer a long-term technical partner over freelancers
+
+value clarity and maintainability
+
+don’t want to oversell AI to clients
+
+If your agency is growing and automation keeps coming up — this is usually a good time to talk.
+
+Getting in touch
+
+If you want to explore whether this makes sense for your agency:
+
+Email: abhirup@blackpanda.tech
+
+Optional: Calendly link for scheduling a conversation
