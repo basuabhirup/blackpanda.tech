@@ -39,7 +39,7 @@ export function Hero() {
             <p className="text-xl md:text-2xl text-gray-700 font-light leading-relaxed max-w-3xl mx-auto">
               White-label automation and software development for digital marketing agencies. 
               <br />
-              <span className="text-emerald-600 font-semibold">Serving UK & US based agencies and their clients</span>
+              <span className="text-emerald-600 font-semibold">Serving US, UK, and EU timezones</span>
             </p>
           </div>
 

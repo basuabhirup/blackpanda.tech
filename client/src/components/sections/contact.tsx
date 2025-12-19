@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Mail, MapPin } from "lucide-react";
+import { Mail, Globe } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export function Contact() {
@@ -42,33 +42,51 @@ export function Contact() {
 
           <div className="border-t-2 border-gray-200 pt-8">
             <div className="flex items-center justify-center gap-2 text-gray-700 font-semibold mb-4">
-              <MapPin className="w-5 h-5 text-emerald-600" />
-              <span>We Work With</span>
+              <Globe className="w-5 h-5 text-emerald-600" />
+              <span>We Serve</span>
             </div>
-            <div className="flex justify-center gap-6 text-lg font-semibold text-emerald-600">
-              <span>🇬🇧 UK-Based Agencies</span>
-              <span className="text-gray-400">•</span>
-              <span>🇺🇸 US-Based Agencies</span>
+            <div className="grid grid-cols-3 gap-4 md:gap-6 justify-center mb-4">
+              <div className="text-center">
+                <div className="text-2xl mb-2">🇺🇸</div>
+                <span className="font-semibold text-emerald-600">US</span>
+              </div>
+              <div className="text-center">
+                <div className="text-2xl mb-2">🇬🇧</div>
+                <span className="font-semibold text-emerald-600">UK</span>
+              </div>
+              <div className="text-center">
+                <div className="text-2xl mb-2">🇪🇺</div>
+                <span className="font-semibold text-emerald-600">EU</span>
+              </div>
             </div>
-            <p className="text-gray-600 text-sm mt-3 font-light">
-              Serving agencies and their clients across UK and US timezones
+            <p className="text-gray-600 text-sm font-light">
+              We work across US, UK, and EU timezones to support your agency 24/7
             </p>
           </div>
         </motion.div>
 
-        <motion.div
+        <motion.footer
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
-          className="mt-16 pt-12 border-t-2 border-gray-200 text-center text-gray-600 font-light"
+          className="mt-16 pt-12 border-t-2 border-gray-200"
         >
-          <p className="text-sm">
-            © {new Date().getFullYear()} Black Panda Technologies. All rights reserved.
-          </p>
-          <p className="text-xs text-gray-500 mt-2 font-mono">
-            www.blackpanda.tech
-          </p>
-        </motion.div>
+          <div className="space-y-4 text-center text-gray-600 font-light">
+            <p className="text-sm">
+              © {new Date().getFullYear()} Black Panda Technologies. All rights reserved.
+            </p>
+            <p className="text-xs text-gray-500 font-mono">
+              www.blackpanda.tech
+            </p>
+            <div className="flex justify-center gap-4 text-xs text-gray-500 pt-4">
+              <span>US</span>
+              <span className="text-gray-300">•</span>
+              <span>UK</span>
+              <span className="text-gray-300">•</span>
+              <span>EU</span>
+            </div>
+          </div>
+        </motion.footer>
       </div>
     </section>
   );

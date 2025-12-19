@@ -1,0 +1,116 @@
+1. White-Label Client Automation for Lead Handling
+
+Agencies often manage leads across multiple clients, platforms, and funnels. Over time, this becomes fragmented and manual.
+
+What we typically build:
+
+automated lead intake from forms, ads, chatbots, and landing pages
+
+enrichment and validation of lead data
+
+routing logic based on rules or context
+
+handoff to CRMs, email tools, or internal dashboards
+
+How it’s maintained:
+
+workflows orchestrated using make.com or n8n
+
+logic that agencies can inspect and adjust later
+
+The result is a system agencies can resell under their own brand, without needing to explain the technical details to clients.
+
+2. Internal Automation for Agency Operations
+
+Many agencies focus on client automation while running their own operations manually.
+
+Typical internal use cases include:
+
+onboarding new clients
+
+campaign setup checklists
+
+internal reporting and alerts
+
+syncing data between tools used by different teams
+
+These systems usually start small and evolve over time, rather than being “fully automated” from day one.
+
+3. Client-Facing AI Assistants (White-Label)
+
+Some agency clients want chat-based experiences, but not generic AI bots.
+
+We help agencies offer:
+
+website assistants for lead qualification or FAQs
+
+onboarding assistants for SaaS or service businesses
+
+internal knowledge assistants for client teams
+
+The emphasis is on:
+
+narrow scope
+
+predictable behavior
+
+clear boundaries on what the assistant can and can’t do
+
+All assistants are delivered white-label and designed to integrate cleanly into existing funnels.
+
+4. Workflow Rescue & Cleanup
+
+Agencies often inherit fragile automations built quickly or by multiple vendors.
+
+Common situations:
+
+automations breaking silently
+
+duplicated logic across tools
+
+unclear ownership or documentation
+
+workflows that no one wants to touch anymore
+
+We help by:
+
+auditing existing workflows
+
+simplifying logic
+
+rebuilding critical paths using make.com or n8n
+
+documenting systems so they’re easier to maintain
+
+This is often a starting point before new automation is added.
+
+5. Custom Tools for Agency-Specific Needs
+
+Sometimes agencies need small, focused tools that don’t justify a full product build.
+
+Examples include:
+
+internal dashboards
+
+lightweight admin panels
+
+client-specific reporting views
+
+tools that sit between existing platforms
+
+These are usually frontend-heavy, practical, and built to solve a very specific problem.
+
+6. Ongoing White-Label Technical Support
+
+For some agencies, the main need is not a single build, but ongoing technical continuity.
+
+This can include:
+
+maintaining existing automations
+
+extending workflows as client needs evolve
+
+acting as a quiet technical backend for new service offerings
+
+The agency stays client-facing.
+The technical work stays behind the scenes.

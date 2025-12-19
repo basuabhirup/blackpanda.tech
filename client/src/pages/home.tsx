@@ -6,6 +6,7 @@ import { HowWeWork } from "@/components/sections/how-we-work";
 import { TechStack } from "@/components/sections/tech-stack";
 import { ProjectStart } from "@/components/sections/project-start";
 import { Philosophy } from "@/components/sections/philosophy";
+import { UseCases } from "@/components/sections/use-cases";
 import { WhoFits } from "@/components/sections/who-fits";
 import { Founder } from "@/components/sections/founder";
 import { Contact } from "@/components/sections/contact";
@@ -32,7 +33,7 @@ export default function Home() {
           <motion.div 
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
-            className="flex items-center gap-2 font-display font-bold text-lg text-gray-900"
+            className="flex items-center gap-2 font-display font-bold text-lg text-emerald-600"
           >
             <span className="text-2xl">🐼</span>
             <span className="hidden sm:inline">Black Panda Technologies</span>
@@ -75,6 +76,7 @@ export default function Home() {
         <HowWeWork />
         <TechStack />
         <ProjectStart />
+        <UseCases />
         <Philosophy />
         <WhoFits />
         <Founder />
