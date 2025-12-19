@@ -26,7 +26,7 @@ const principles = [
 
 export function HowWeWork() {
   return (
-    <section className="py-24 bg-gray-50 relative">
+    <section className="py-24 bg-gray-100 relative">
       <div className="absolute top-0 left-0 w-96 h-96 bg-blue-50 rounded-full blur-3xl opacity-30" />
       
       <div className="container px-6 mx-auto relative z-10">
@@ -52,7 +52,7 @@ export function HowWeWork() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.08 }}
-              className="p-8 bg-white border-2 border-gray-200 rounded-lg hover:border-emerald-500 hover:shadow-lg transition-all duration-300"
+              className="p-8 bg-white border-2 border-gray-200 rounded-lg hover:border-emerald-500 hover:shadow-lg transition-all duration-300 hover:scale-105 hover:cursor-pointer"
             >
               <div className="flex gap-4 items-start">
                 <div className="w-10 h-10 bg-emerald-100 rounded-lg flex items-center justify-center shrink-0">

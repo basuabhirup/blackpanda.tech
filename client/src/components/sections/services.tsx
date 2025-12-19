@@ -36,7 +36,7 @@ const services = [
 
 export function Services() {
   return (
-    <section id="services" className="py-24 bg-gray-50 relative">
+    <section id="services" className="py-24 bg-gray-100 relative">
       <div className="container px-6 mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 10 }}
@@ -60,7 +60,7 @@ export function Services() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.05, duration: 0.4 }}
-              className="group p-8 bg-white border-2 border-gray-200 rounded-lg hover:border-emerald-500 hover:shadow-lg transition-all duration-300 min-h-[280px] flex flex-col justify-between"
+              className="group p-8 bg-white border-2 border-gray-200 rounded-lg hover:border-emerald-500 hover:shadow-lg transition-all duration-300 min-h-[280px] flex flex-col justify-between hover:scale-105 hover:cursor-pointer"
             >
               <div>
                 <div className="w-14 h-14 bg-emerald-100 rounded-lg flex items-center justify-center mb-6 group-hover:bg-emerald-600 group-hover:text-white transition-colors">

@@ -126,7 +126,7 @@ export function UseCases() {
               <TabsTrigger 
                 key={useCase.id}
                 value={useCase.id}
-                className="text-xs md:text-sm py-2 px-2 md:px-3 rounded data-[state=active]:bg-emerald-600 data-[state=active]:text-white font-semibold"
+                className="text-xs md:text-sm py-2 px-2 md:px-3 rounded data-[state=active]:bg-emerald-600 data-[state=active]:text-white font-semibold hover:bg-emerald-500 hover:text-white hover:cursor-pointer"
               >
                 <useCase.icon className="w-4 h-4 mr-1 inline" />
                 <span className="hidden sm:inline">{useCase.title.split(" ")[0]}</span>

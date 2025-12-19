@@ -16,7 +16,7 @@ export default function Home() {
   const scaleX = useSpring(scrollYProgress, {
     stiffness: 100,
     damping: 30,
-    restDelta: 0.001
+    restDelta: 0.001,
   });
 
   return (
@@ -28,33 +28,59 @@ export default function Home() {
       />
 
       {/* Navigation */}
-      <nav className="fixed top-0 left-0 right-0 z-40 px-6 py-4 bg-white/80 backdrop-blur-md border-b border-gray-100">
+      <nav className="fixed top-0 left-0 right-0 z-40 px-6 py-4 bg-white/80 backdrop-blur-md border-b border-gray-200">
         <div className="container mx-auto flex justify-between items-center">
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
             className="flex items-center gap-2 font-display font-bold text-lg text-emerald-600"
           >
             <span className="text-2xl">🐼</span>
-            <span className="hidden sm:inline">Black Panda Technologies</span>
-            <span className="sm:hidden">Black Panda</span>
+            <span className="hidden sm:inline uppercase">
+              Black Panda Technologies
+            </span>
+            <span className="sm:hidden uppercase">
+              Black Panda Technologies
+            </span>
           </motion.div>
           <div className="hidden md:flex gap-8 text-sm font-semibold text-gray-700">
-            <button 
-              onClick={() => document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' })} 
-              className="hover:text-emerald-600 transition-colors"
+            <button
+              onClick={() =>
+                document
+                  .getElementById("services")
+                  ?.scrollIntoView({ behavior: "smooth" })
+              }
+              className="hover:text-emerald-600 transition-colors hover:cursor-pointer"
             >
               What We Do
             </button>
-            <button 
-              onClick={() => document.getElementById('when-to-work')?.scrollIntoView({ behavior: 'smooth' })} 
-              className="hover:text-emerald-600 transition-colors"
+            <button
+              onClick={() =>
+                document
+                  .getElementById("when-to-work")
+                  ?.scrollIntoView({ behavior: "smooth" })
+              }
+              className="hover:text-emerald-600 transition-colors hover:cursor-pointer"
             >
               When to Work
             </button>
-            <button 
-              onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })} 
-              className="hover:text-emerald-600 transition-colors"
+            <button
+              onClick={() =>
+                document
+                  .getElementById("use-cases")
+                  ?.scrollIntoView({ behavior: "smooth" })
+              }
+              className="hover:text-emerald-600 transition-colors hover:cursor-pointer"
+            >
+              Use Cases
+            </button>
+            <button
+              onClick={() =>
+                document
+                  .getElementById("contact")
+                  ?.scrollIntoView({ behavior: "smooth" })
+              }
+              className="hover:text-emerald-600 transition-colors hover:cursor-pointer"
             >
               Contact
             </button>
@@ -62,9 +88,9 @@ export default function Home() {
         </div>
       </nav>
 
-      <main className="pt-20">
+      <main className="pt-4">
         <Hero />
-        
+
         <div id="services">
           <Services />
         </div>
@@ -74,9 +100,11 @@ export default function Home() {
         </div>
 
         <HowWeWork />
-        <TechStack />
-        <ProjectStart />
-        <UseCases />
+        {/* <TechStack /> */}
+        {/* <ProjectStart /> */}
+        <div id="use-cases">
+          <UseCases />
+        </div>
         <Philosophy />
         <WhoFits />
         <Founder />

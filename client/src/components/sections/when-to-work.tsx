@@ -52,7 +52,7 @@ export function WhenToWork() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
-              className="group p-8 bg-gradient-to-br from-emerald-50 to-blue-50 border-2 border-emerald-100 rounded-lg hover:border-emerald-500 hover:shadow-lg transition-all duration-300"
+              className="group p-8 bg-gradient-to-br from-emerald-50 to-blue-50 border-2 border-emerald-100 rounded-lg hover:border-emerald-500 hover:shadow-lg transition-all duration-300 hover:scale-105 hover:cursor-pointer"
             >
               <div className="flex gap-4">
                 <div className="w-12 h-12 flex items-center justify-center bg-emerald-600 text-white rounded-lg shrink-0 group-hover:scale-110 transition-transform">

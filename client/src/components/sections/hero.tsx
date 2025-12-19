@@ -32,8 +32,8 @@ export function Hero() {
           </motion.div>
 
           <div>
-            <h1 className="text-6xl md:text-7xl font-display font-bold text-emerald-600 tracking-tight leading-tight mb-6">
-              BLACK PANDA <br />TECHNOLOGIES
+            <h1 className="text-5xl md:text-7xl font-display font-bold text-emerald-600 tracking-tight leading-tight mb-6">
+              BLACK PANDA TECHNOLOGIES
             </h1>
             
             <p className="text-xl md:text-2xl text-gray-700 font-light leading-relaxed max-w-3xl mx-auto">
@@ -68,15 +68,6 @@ export function Hero() {
           </div>
         </motion.div>
       </div>
-
-      <motion.div 
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 1, duration: 1 }}
-        className="absolute bottom-10 left-1/2 -translate-x-1/2 text-emerald-600 animate-bounce"
-      >
-        <ChevronDown size={28} strokeWidth={3} />
-      </motion.div>
     </section>
   );
 }
