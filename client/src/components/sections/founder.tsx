@@ -2,36 +2,54 @@ import { motion } from "framer-motion";
 
 export function Founder() {
   return (
-    <section className="py-24 bg-white text-black relative">
-      <div className="container px-6 mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-12">
-          <div className="md:col-span-4">
-             <h2 className="text-2xl font-display font-medium mb-6 uppercase tracking-widest text-black/40">The Founder</h2>
-             <div className="h-1 w-20 bg-black mb-8" />
-             <p className="font-mono text-sm uppercase tracking-wide mb-2">Abhirup Basu</p>
-             <p className="text-black/60 text-sm">Founder & Technical Lead</p>
-          </div>
+    <section className="py-24 bg-emerald-600 text-white relative overflow-hidden">
+      <div className="absolute top-0 right-0 w-96 h-96 bg-emerald-500 rounded-full blur-3xl opacity-20" />
+      
+      <div className="container px-6 mx-auto relative z-10">
+        <div className="max-w-4xl">
+          <motion.h2
+            initial={{ opacity: 0, y: 10 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-sm font-mono uppercase tracking-widest text-emerald-100 mb-4"
+          >
+            Who's Behind It
+          </motion.h2>
           
-          <div className="md:col-span-8 space-y-8">
-            <p className="text-xl md:text-2xl font-serif leading-relaxed text-black/80">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="space-y-8"
+          >
+            <div>
+              <h3 className="text-3xl md:text-4xl font-display font-bold mb-3">
+                Abhirup Basu
+              </h3>
+              <p className="text-emerald-100 font-light text-lg">
+                Founder & Technical Lead
+              </p>
+            </div>
+
+            <p className="text-xl leading-relaxed font-light text-white/90 max-w-2xl">
               Before working in software, Abhirup studied Earth Science and Geology. This shaped how he approaches systems: looking at layers, dependencies, long-term behavior, and edge cases.
             </p>
-            
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 pt-8 border-t border-black/10">
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-8 border-t-2 border-white/20">
               <div className="space-y-2">
-                <h4 className="font-medium font-display text-lg">Curiosity over rigid templates</h4>
-                <p className="text-black/60 font-light">Every agency is different. We adapt our systems to fit your stack, not the other way around.</p>
+                <h4 className="font-semibold text-lg">Curiosity First</h4>
+                <p className="text-emerald-100 font-light">Every agency is different. We adapt systems to fit your stack.</p>
               </div>
               <div className="space-y-2">
-                <h4 className="font-medium font-display text-lg">Experimentation first</h4>
-                <p className="text-black/60 font-light">We test assumptions before formalizing infrastructure. Less fragile code, more robust systems.</p>
+                <h4 className="font-semibold text-lg">Experimentation</h4>
+                <p className="text-emerald-100 font-light">Test assumptions before formalizing. More robust, less fragile.</p>
               </div>
               <div className="space-y-2">
-                <h4 className="font-medium font-display text-lg">Scale without liabilities</h4>
-                <p className="text-black/60 font-light">The goal isn't just to ship fast, but to build things that don't break when you grow.</p>
+                <h4 className="font-semibold text-lg">Long-term Thinking</h4>
+                <p className="text-emerald-100 font-light">Build infrastructure that scales without becoming a liability.</p>
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>

@@ -1,59 +1,69 @@
 import { motion } from "framer-motion";
 import { ArrowRight, ChevronDown } from "lucide-react";
-import heroBg from "@assets/generated_images/dark_abstract_topographic_digital_layers.png";
+import pandaLogo from "@assets/generated_images/cute_playful_panda_face_mascot.png";
 import { Button } from "@/components/ui/button";
 
 export function Hero() {
   return (
-    <section className="relative min-h-[90vh] flex flex-col justify-center items-center overflow-hidden border-b border-white/5">
-      {/* Background with Overlay */}
-      <div className="absolute inset-0 z-0">
-        <img 
-          src={heroBg} 
-          alt="Abstract Technical Layers" 
-          className="w-full h-full object-cover opacity-30 mix-blend-luminosity"
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-background via-background/80 to-transparent" />
-        <div className="absolute inset-0 bg-grid-pattern opacity-20" />
-      </div>
+    <section className="relative min-h-screen flex flex-col justify-center items-center overflow-hidden bg-white">
+      {/* Background shapes */}
+      <div className="absolute top-0 right-0 w-96 h-96 bg-emerald-50 rounded-full blur-3xl opacity-40" />
+      <div className="absolute bottom-0 left-0 w-96 h-96 bg-blue-50 rounded-full blur-3xl opacity-40" />
 
       <div className="container relative z-10 px-6 mx-auto text-center">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
-          className="max-w-4xl mx-auto space-y-8"
+          transition={{ duration: 0.6 }}
+          className="space-y-8 max-w-5xl mx-auto"
         >
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs font-mono uppercase tracking-wider text-muted-foreground mb-4">
-            <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
-            Operational Capacity: Available
+          {/* Panda Logo */}
+          <motion.div
+            initial={{ scale: 0.8, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            transition={{ delay: 0.2, duration: 0.6 }}
+            className="flex justify-center mb-6"
+          >
+            <img 
+              src={pandaLogo} 
+              alt="Black Panda Mascot" 
+              className="w-32 h-32 drop-shadow-md"
+            />
+          </motion.div>
+
+          <div>
+            <h1 className="text-6xl md:text-7xl font-display font-bold text-emerald-600 tracking-tight leading-tight mb-6">
+              BLACK PANDA <br />TECHNOLOGIES
+            </h1>
+            
+            <p className="text-xl md:text-2xl text-gray-700 font-light leading-relaxed max-w-3xl mx-auto">
+              White-label automation and software development for digital marketing agencies. 
+              <br />
+              <span className="text-emerald-600 font-semibold">Serving UK & US based agencies and their clients</span>
+            </p>
           </div>
 
-          <h1 className="text-5xl md:text-7xl font-display font-medium tracking-tight text-white leading-[1.1]">
-            White-label automation <br/>
-            <span className="text-muted-foreground">delivered offshore.</span>
-          </h1>
-
-          <p className="text-lg md:text-xl text-muted-foreground/80 max-w-2xl mx-auto font-light leading-relaxed">
-            We help agencies offer AI-assisted workflows and internal tools 
-            without building an in-house engineering team.
+          <p className="text-lg text-gray-600 max-w-2xl mx-auto font-light">
+            Workflow automation, AI-assisted systems, chatbot development, and custom frontends — 
+            designed to support your agency's service offerings.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center pt-8">
             <Button 
               size="lg" 
-              className="bg-white text-black hover:bg-white/90 rounded-none h-12 px-8 font-medium text-base tracking-wide"
+              className="bg-emerald-600 text-white hover:bg-emerald-700 rounded-lg h-14 px-8 font-semibold text-base gap-2"
               onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
             >
               Start a Conversation
+              <ArrowRight className="w-5 h-5" />
             </Button>
             <Button 
               variant="outline" 
               size="lg" 
-              className="bg-transparent border-white/20 text-white hover:bg-white/5 hover:text-white rounded-none h-12 px-8 font-medium text-base tracking-wide"
+              className="border-2 border-emerald-600 text-emerald-600 hover:bg-emerald-50 rounded-lg h-14 px-8 font-semibold text-base"
               onClick={() => document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' })}
             >
-              Explore Services
+              See Our Services
             </Button>
           </div>
         </motion.div>
@@ -63,9 +73,9 @@ export function Hero() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1, duration: 1 }}
-        className="absolute bottom-10 left-1/2 -translate-x-1/2 text-muted-foreground/50 animate-bounce"
+        className="absolute bottom-10 left-1/2 -translate-x-1/2 text-emerald-600 animate-bounce"
       >
-        <ChevronDown size={24} />
+        <ChevronDown size={28} strokeWidth={3} />
       </motion.div>
     </section>
   );

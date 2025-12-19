@@ -45,34 +45,34 @@
 }
 
 :root {
-  /* Default to Dark Mode aesthetics for Black Panda */
-  --background: 0 0% 5%; /* #0d0d0d - Almost Black */
-  --foreground: 0 0% 95%; /* #f2f2f2 - Off White */
+  /* Bright, Playful Color Scheme */
+  --background: 0 0% 100%; /* White */
+  --foreground: 0 0% 15%; /* Dark text */
 
-  --card: 0 0% 8%; 
-  --card-foreground: 0 0% 95%;
+  --card: 200 20% 95%; /* Light blue-gray */
+  --card-foreground: 0 0% 15%;
 
-  --popover: 0 0% 8%;
-  --popover-foreground: 0 0% 95%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 0 0% 15%;
 
-  --primary: 0 0% 98%; /* White */
-  --primary-foreground: 0 0% 5%; /* Black text on white */
+  --primary: 127 100% 35%; /* Bright Emerald Green */
+  --primary-foreground: 0 0% 100%; /* White text on green */
 
-  --secondary: 0 0% 15%; /* Dark Gray */
-  --secondary-foreground: 0 0% 98%;
+  --secondary: 0 0% 90%;
+  --secondary-foreground: 0 0% 15%;
 
-  --muted: 0 0% 15%;
-  --muted-foreground: 0 0% 60%;
+  --muted: 200 15% 85%;
+  --muted-foreground: 0 0% 50%;
 
-  --accent: 0 0% 15%;
-  --accent-foreground: 0 0% 98%;
+  --accent: 127 100% 35%; /* Same as primary for consistency */
+  --accent-foreground: 0 0% 100%;
 
-  --destructive: 0 60% 30%;
-  --destructive-foreground: 0 0% 98%;
+  --destructive: 0 84% 60%;
+  --destructive-foreground: 0 0% 100%;
 
-  --border: 0 0% 20%;
-  --input: 0 0% 20%;
-  --ring: 0 0% 80%;
+  --border: 0 0% 90%;
+  --input: 0 0% 95%;
+  --ring: 127 100% 35%;
 
   --radius: 0.25rem;
 }
@@ -93,7 +93,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-mono);
 }
 
-/* Custom Scrollbar for "Technical" feel */
+/* Custom Scrollbar */
 ::-webkit-scrollbar {
   width: 8px;
 }
@@ -105,13 +105,18 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: hsl(var(--muted-foreground));
+  background: hsl(var(--accent));
 }
 
-/* Utility for grid background */
-.bg-grid-pattern {
-  background-size: 40px 40px;
-  background-image: 
-    linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+/* Gradient background for sections */
+.bg-gradient-soft {
+  background: linear-gradient(135deg, #f0f9ff 0%, #f0fdf4 100%);
+}
+
+.text-accent {
+  color: hsl(var(--accent));
+}
+
+.text-accent-light {
+  color: hsl(127 100% 45%);
 }
