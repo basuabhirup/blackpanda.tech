@@ -80,15 +80,15 @@ export function Contact() {
               © {new Date().getFullYear()} Black Panda Technologies. All rights
               reserved.
             </p>
-            <p className="text-xs text-gray-500 mt-2">
-              Registered in India 🇮🇳 |{" "}
+            <p className="text-xs text-gray-500 mt-6">
+              Registered in India 🇮🇳 | GSTIN:
               <a
                 href="https://services.gst.gov.in/services/searchtp"
                 target="_blank"
                 rel="noreferrer noopener"
                 className="hover:text-emerald-600"
               >
-                GSTIN: 19CSAPB8505R1ZB
+                19CSAPB8505R1ZB
               </a>
             </p>
           </div>

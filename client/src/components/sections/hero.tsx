@@ -27,7 +27,7 @@ export function Hero() {
             <img 
               src={pandaLogo} 
               alt="Black Panda Mascot" 
-              className="w-32 h-32 drop-shadow-md"
+              className="w-32 h-32"
             />
           </motion.div>
 
@@ -37,8 +37,8 @@ export function Hero() {
             </h1>
             
             <p className="text-xl md:text-2xl text-gray-700 font-light leading-relaxed max-w-3xl mx-auto">
-              White-label automation and software development for digital marketing agencies. 
-              <br />
+              White-label automation and software development solutions for digital marketing agencies. 
+              <br /><br />
               <span className="text-emerald-600 font-semibold">Serving US, UK, and EU timezones</span>
             </p>
           </div>
