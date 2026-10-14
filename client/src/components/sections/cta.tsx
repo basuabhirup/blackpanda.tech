@@ -1,7 +1,7 @@
-import { Mail } from "lucide-react";
+import { ArrowUpRight, GitBranch, Mail } from "lucide-react";
 import { Wordmark } from "@/components/brand/logo";
 import { ButtonLink, Reveal } from "@/components/site/primitives";
-import { CONTACT_EMAIL, INFRA_AUDIT_HREF, NAV_LINKS } from "@/lib/site";
+import { CONTACT_EMAIL, INFRA_AUDIT_HREF, NAV_LINKS, REPO_URL } from "@/lib/site";
 
 export function CTA() {
   return (
@@ -65,7 +65,32 @@ export function CTA() {
           </div>
         </div>
 
-        <div className="mt-10 flex flex-col gap-2 border-t border-line pt-6 text-xs text-white/30 md:flex-row md:items-center md:justify-between">
+        {/* Colophon: this site is itself the example */}
+        <div className="mt-10 rounded-xl border border-line bg-white/[0.02] p-5 md:flex md:items-center md:justify-between md:gap-8">
+          <div className="max-w-2xl">
+            <p className="font-mono text-[11px] uppercase tracking-[0.14em] text-signal">
+              Colophon
+            </p>
+            <p className="mt-2 text-sm leading-relaxed text-white/50">
+              This page is its own case study. It was built through prompts in
+              Claude Code, then shipped the way we’d ship yours: every change
+              opens a pull request, gets a preview URL, and goes live through a
+              CI/CD pipeline when it’s merged to production.
+            </p>
+          </div>
+          <a
+            href={REPO_URL}
+            target="_blank"
+            rel="noreferrer noopener"
+            className="group mt-4 inline-flex shrink-0 items-center gap-2 whitespace-nowrap rounded-lg border border-white/12 bg-white/[0.03] px-4 py-2.5 font-mono text-[12.5px] text-white/80 transition-colors hover:border-signal/40 hover:text-signal md:mt-0"
+          >
+            <GitBranch className="h-4 w-4" />
+            View the source
+            <ArrowUpRight className="h-3.5 w-3.5 transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
+          </a>
+        </div>
+
+        <div className="mt-6 flex flex-col gap-2 border-t border-line pt-6 text-xs text-white/30 md:flex-row md:items-center md:justify-between">
           <p>© {new Date().getFullYear()} Black Panda Technologies. All rights reserved.</p>
           <p>
             Registered in India · GSTIN:{" "}
