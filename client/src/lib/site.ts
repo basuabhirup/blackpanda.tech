@@ -1,4 +1,5 @@
 export const CONTACT_EMAIL = "abhirup@abhirupbasu.com";
+export const REPO_URL = "https://github.com/basuabhirup/blackpanda.tech";
 
 const mailto = (subject: string, body: string) =>
   `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
